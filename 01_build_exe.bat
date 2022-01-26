@@ -1,0 +1,1 @@
+go build -o dist\http-replay-windows-amd64.exe main.go
