@@ -1,0 +1,1 @@
+go build -o dist/http-replay-linux-amd64 main.go;cd dist;tar -czvf http-replay-linux-amd64.tar.gz http-replay-linux-amd64;cd ..;

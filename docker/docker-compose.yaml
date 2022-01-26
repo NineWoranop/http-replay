@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  http-creplay:
+    build: http-replay/.
+    ports:
+      - 8080:8080
+    command:
+    - '-autorepeat=false'
+    - '-web.listen-address=:8080'
+    - '-path=/data/'
+    volumes:
+      - ./http-replay/mount:/data
